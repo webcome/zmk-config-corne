@@ -58,6 +58,7 @@
       label = "greeting";
       bindings = <&kp H &kp E &kp L &kp L &kp O>;
     };
+
     rgblayer: rgb_layer {
       compatible = "zmk,behavior-macro-two-param";
       #binding-cells = <2>;
@@ -73,6 +74,7 @@
         , <&rgb_ug RGB_TOG>
         ;
     };
+
     shift: with_lshift {
       compatible = "zmk,behavior-macro-one-param";
       #binding-cells = <1>;
@@ -86,6 +88,7 @@
         , <&kp LSHFT>
         ;
     };
+
     as: autoshift {
       compatible = "zmk,behavior-macro-one-param";
       #binding-cells = <1>;
@@ -109,36 +112,41 @@
 
       tapping-term-ms = <190>;
     };
+
     hml: homewrow_mods_left {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       label = "HOMEROW_MODS_LEFT_HAND";
       bindings = <&kp>, <&kp>;
-      tapping-term-ms = <200>;
 
+      tapping-term-ms = <200>;
       hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
     };
+
     hmr: homewrow_mods_right {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       label = "HOMEROW_MODS_RIGHT_HAND";
       bindings = <&kp>, <&kp>;
-      tapping-term-ms = <200>;
 
+      tapping-term-ms = <200>;
       hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
     };
+
     capdance: capdance {
       compatible = "zmk,behavior-tap-dance";
       label = "CAPDANCE";
       #binding-cells = <0>;
       bindings = <&caps_word>, <&kp CAPS>;
     };
+
     volknob: volume_encoder {
       compatible = "zmk,behavior-sensor-rotate";
       label = "ENCODER_VOLUME_KNOB";
       #sensor-binding-cells = <0>;
       bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
     };
+
     rgbknob: rgb_encoder {
       compatible = "zmk,behavior-sensor-rotate-var";
       label = "ENCODER_RGB";
@@ -161,10 +169,10 @@
 
     base {
       bindings = <
-        &kp TAB    &kp Q         &kp W         &kp E        &kp R                                    &kp T        &kp Y    &kp U                                     &kp I        &kp O         &kp P            &kp BSLH
-        &capdance  &hml LSHFT A  &hml LCTRL S  &hml LALT D  &hml LCMD F                              &kp G        &kp H    &hmr RCMD J                               &hmr RALT K  &hmr RCTRL L  &hmr RSHFT SEMI  &kp APOS
-        &kp LSHFT  &kp Z         &kp X         &kp C        &kp V                                    &kp B        &kp N    &kp M                                     &kp COMMA    &kp DOT       &kp FSLH         &kp ESC
-                                               &kp LGUI     &rgblayer 1 RGB_COLOR_HSB_VAL(80,70,50)  &kp SPACE    &kp RET  &rgblayer 2 RGB_COLOR_HSB_VAL(180,70,50)  &kp RALT
+        &kp ESCAPE  &kp Q         &kp W         &kp E        &kp R        &kp T        &kp Y    &kp U            &kp I        &kp O         &kp P            &kp BSLH
+        &kp TAB     &hml LSHFT A  &hml LCTRL S  &hml LALT D  &hml LCMD F  &kp G        &kp H    &hmr RCMD J      &hmr RALT K  &hmr RCTRL L  &hmr RSHFT SEMI  &kp APOS
+        &kp LSHFT   &kp Z         &kp X         &kp C        &kp V        &kp B        &kp N    &kp M            &kp COMMA    &kp DOT       &kp FSLH         &capdance
+                                                &kp LGUI     &lt 1 GRAVE  &kp SPACE    &kp RET  &lt 2 BACKSPACE  &kp RALT
       >;
 
       sensor-bindings = <&rgbknob RGB_HUI RGB_HUD>, <&rgbknob RGB_BRI RGB_BRD>;
@@ -172,10 +180,10 @@
 
     raise {
       bindings = <
-        &trans      &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
-        &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans  &trans
-        &trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                                                &trans        &trans        &trans          &trans  &trans  &trans
+        &trans  &kp N1    &kp N2   &kp N3  &kp N4         &kp N5         &kp N6          &kp N7          &kp N8        &kp N9           &kp N0   &trans
+        &trans  &kp HOME  &kp END  &trans  &kp PAGE_DOWN  &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans   &kp F12
+        &trans  &kp F1    &kp F2   &kp F3  &kp F4         &kp F5         &kp F6          &kp F7          &kp F8        &kp F9           &kp F10  &kp F11
+                                   &trans  &trans         &trans         &trans          &trans          &trans
       >;
 
       sensor-bindings = <&volknob>;
@@ -183,19 +191,19 @@
 
     lower {
       bindings = <
-        &trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp STAR  &kp LPAR  &kp RPAR  &trans
-        &trans  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
-        &trans  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
-                                  &trans    &trans    &trans       &trans     &trans     &trans
+        &trans      &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT       &kp CARET  &kp AMPS   &kp STAR  &kp LPAR  &kp RPAR  &trans
+        &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
+        &trans      &trans        &trans        &trans        &trans        &trans          &kp UNDER  &kp PLUS   &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
+                                                &trans        &trans        &trans          &trans     &trans     &trans
       >;
     };
 
     both {
       bindings = <
-        &rgb_ug RGB_COLOR_HSB(0,80,60)  &rgb_ug RGB_COLOR_HSB(20,80,60)  &rgb_ug RGB_COLOR_HSB(40,80,60)  &rgb_ug RGB_COLOR_HSB(60,80,60)  &rgb_ug RGB_COLOR_HSB(80,80,60)  &rgb_ug RGB_COLOR_HSB(100,80,60)    &rgb_ug RGB_COLOR_HSB(120,80,60)  &rgb_ug RGB_COLOR_HSB(140,80,60)  &rgb_ug RGB_COLOR_HSB(160,80,60)  &rgb_ug RGB_COLOR_HSB(180,80,60)  &rgb_ug RGB_COLOR_HSB(200,80,60)  &rgb_ug RGB_COLOR_HSB(220,80,60)
-        &rgb_ug RGB_COLOR_HSB(0,60,40)  &rgb_ug RGB_COLOR_HSB(20,60,40)  &rgb_ug RGB_COLOR_HSB(40,60,40)  &rgb_ug RGB_COLOR_HSB(60,60,40)  &rgb_ug RGB_COLOR_HSB(80,60,40)  &rgb_ug RGB_COLOR_HSB(100,60,40)    &rgb_ug RGB_COLOR_HSB(120,60,40)  &rgb_ug RGB_COLOR_HSB(140,60,40)  &rgb_ug RGB_COLOR_HSB(160,60,40)  &rgb_ug RGB_COLOR_HSB(180,60,40)  &rgb_ug RGB_COLOR_HSB(200,60,40)  &rgb_ug RGB_COLOR_HSB(220,60,40)
-        &rgb_ug RGB_COLOR_HSB(0,80,30)  &rgb_ug RGB_COLOR_HSB(20,80,30)  &rgb_ug RGB_COLOR_HSB(40,80,30)  &rgb_ug RGB_COLOR_HSB(60,80,30)  &rgb_ug RGB_COLOR_HSB(80,80,30)  &rgb_ug RGB_COLOR_HSB(100,80,30)    &rgb_ug RGB_COLOR_HSB(120,80,30)  &rgb_ug RGB_COLOR_HSB(140,80,30)  &rgb_ug RGB_COLOR_HSB(160,80,30)  &rgb_ug RGB_COLOR_HSB(180,80,30)  &rgb_ug RGB_COLOR_HSB(200,80,30)  &rgb_ug RGB_COLOR_HSB(220,80,30)
-                                                                                                          &trans                           &trans                           &trans                              &trans                            &trans                            &trans
+        &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                &trans  &trans  &trans    &trans  &trans  &trans
       >;
     };
 
