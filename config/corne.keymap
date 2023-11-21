@@ -144,7 +144,7 @@
 
     tri_layer {
       if-layers = <2 1>;
-      then-layer = <4>;
+      then-layer = <5>;
     };
   };
 
