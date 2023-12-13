@@ -121,7 +121,7 @@
       compatible = "zmk,behavior-tap-dance";
       label = "CAPDANCE";
       #binding-cells = <0>;
-      bindings = <&caps_word>, <&kp CAPS>;
+      bindings = <&sl 4>, <&kp CAPS>;
     };
 
     volknob: volume_encoder {
