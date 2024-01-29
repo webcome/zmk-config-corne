@@ -48,12 +48,12 @@
       bindings = <&kp BACKSPACE>;
     };
 
-    delete {
+    delete1 {
       bindings = <&kp DELETE>;
       key-positions = <32 33 24>;
     };
 
-    delete {
+    delete2 {
       bindings = <&kp DELETE>;
       key-positions = <11 24>;
     };
