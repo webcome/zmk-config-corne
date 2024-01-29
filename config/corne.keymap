@@ -45,17 +45,7 @@
 
     backspace {
       key-positions = <32 33>;
-      bindings = <&kp BACKSPACE>;
-    };
-
-    delete1 {
       bindings = <&kp DELETE>;
-      key-positions = <32 33 24>;
-    };
-
-    delete2 {
-      bindings = <&kp DELETE>;
-      key-positions = <11 10>;
     };
   };
 
