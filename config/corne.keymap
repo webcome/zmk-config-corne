@@ -55,7 +55,7 @@
 
     delete2 {
       bindings = <&kp DELETE>;
-      key-positions = <11 24>;
+      key-positions = <11 10>;
     };
   };
 
