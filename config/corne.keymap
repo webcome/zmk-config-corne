@@ -168,7 +168,7 @@
       bindings = <
         &kp ESCAPE      &kp Q  &kp W  &kp E     &kp R  &kp T           &kp Y           &kp U  &kp I      &kp O    &kp P     &kp BACKSPACE
         &hml LCTRL TAB  &kp A  &kp S  &kp D     &kp F  &kp G           &kp H           &kp J  &kp K      &kp L    &kp SEMI  &kp APOS
-        &kp LEFT_SHIFT  &kp Z  &kp X  &kp C     &kp V  &kp B           &kp N           &kp M  &kp COMMA  &kp DOT  &kp FSLH  &hmr GLOBE RETURN
+        &kp LEFT_SHIFT  &kp Z  &kp X  &kp C     &kp V  &kp B           &kp N           &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp GLOBE
                                       &kp LGUI  &sl 1  &kp LEFT_ALT    &hmr2 4 RETURN  &sl 2  &kp SPACE
       >;
     };
