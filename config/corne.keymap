@@ -47,6 +47,11 @@
       key-positions = <32 33>;
       bindings = <&kp DELETE>;
     };
+
+    delete {
+      bindings = <&none>;
+      key-positions = <20 21>;
+    };
   };
 
   macros {
