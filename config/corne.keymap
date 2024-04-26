@@ -88,6 +88,13 @@
         , <&macro_param_1to1 &macro_param_1to2 &as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>
         ;
     };
+
+    leader_leader_s: leader_leader {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&kp SPACE &kp SPACE &kp S>;
+      label = "LEADER_LEADER";
+    };
   };
 
   behaviors {
@@ -166,7 +173,7 @@
 
     base {
       bindings = <
-        &kp ESCAPE      &kp Q  &kp W  &kp E     &kp R  &kp T           &kp Y           &kp U  &kp I      &kp O    &kp P     &kp BACKSLASH
+        &kp ESCAPE      &kp Q  &kp W  &kp E     &kp R  &kp T           &kp Y           &kp U  &kp I      &kp O    &kp P     &leader_leader_s
         &hml LCTRL TAB  &kp A  &kp S  &kp D     &kp F  &kp G           &kp H           &kp J  &kp K      &kp L    &kp SEMI  &kp APOS
         &kp LEFT_SHIFT  &kp Z  &kp X  &kp C     &kp V  &kp B           &kp N           &kp M  &kp COMMA  &kp DOT  &kp FSLH  &sl 6
                                       &kp LGUI  &sl 1  &kp LEFT_ALT    &hmr2 4 RETURN  &sl 2  &kp SPACE
