@@ -92,7 +92,7 @@
     leader_leader_s: leader_leader {
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
-      bindings = <&kp SPACE &kp SPACE &kp S>;
+      bindings = <&kp ESCAPE &kp SPACE &kp SPACE &kp S>;
       label = "LEADER_LEADER";
     };
   };
@@ -154,7 +154,7 @@
       label = "HMR2";
       bindings = <&sl>, <&kp>;
 
-      tapping-term-ms = <200>;
+      tapping-term-ms = <100>;
       hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
     };
   };
