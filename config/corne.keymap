@@ -57,6 +57,11 @@
       bindings = <&leader_leader_s>;
       key-positions = <16 19>;
     };
+
+    escape {
+      bindings = <&kp ESCAPE>;
+      key-positions = <1 2>;
+    };
   };
 
   macros {
