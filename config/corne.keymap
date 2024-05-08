@@ -14,7 +14,7 @@
     compatible = "zmk,combos";
 
     tab {
-      key-positions = <2 3>;
+      key-positions = <14 15>;
       bindings = <&kp TAB>;
     };
 
@@ -51,6 +51,11 @@
     backspace {
       bindings = <&kp BACKSPACE>;
       key-positions = <20 21>;
+    };
+
+    leader_leader_s {
+      bindings = <&leader_leader_s>;
+      key-positions = <16 19>;
     };
   };
 
