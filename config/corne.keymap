@@ -188,27 +188,27 @@
 
     base {
       bindings = <
-        &kp ESCAPE      &kp Q              &kp W                &kp E            &kp R  &kp T           &kp Y           &kp U  &kp I             &kp O                   &kp P                       &trans
-        &hml LCTRL TAB  &hml LEFT_SHIFT A  &hmr2 4 S            &hml LEFT_ALT D  &kp F  &kp G           &kp H           &kp J  &hmr RIGHT_ALT K  &hmr2 7 L               &hmr RIGHT_SHIFT SEMICOLON  &kp APOS
-        &kp LEFT_SHIFT  &kp Z              &hml LEFT_CONTROL X  &hml LEFT_ALT C  &kp V  &kp B           &kp N           &kp M  &hmr RIGHT_ALT K  &hmr RIGHT_CONTROL DOT  &kp FSLH                    &trans
+        &kp ESCAPE      &kp Q              &kp W                &kp E            &kp R  &kp T           &kp Y           &kp U  &kp I                 &kp O                   &kp P                       &trans
+        &hml LCTRL TAB  &hml LEFT_SHIFT A  &hmr2 4 S            &kp D            &kp F  &kp G           &kp H           &kp J  &kp K                 &hmr2 6 L               &hmr RIGHT_SHIFT SEMICOLON  &kp APOS
+        &kp LEFT_SHIFT  &kp Z              &hml LEFT_CONTROL X  &hml LEFT_ALT C  &kp V  &kp B           &kp N           &kp M  &hmr RIGHT_ALT COMMA  &hmr RIGHT_CONTROL DOT  &kp FSLH                    &trans
                                                                 &kp LGUI         &sl 1  &kp LEFT_ALT    &hmr2 4 RETURN  &sl 2  &kp SPACE
       >;
     };
 
     raise {
       bindings = <
-        &trans  &kp ESCAPE  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp STAR  &kp LPAR  &kp RPAR  &trans
-        &trans  &trans      &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
-        &trans  &trans      &trans  &trans    &trans    &trans       &trans     &trans     &trans    &trans    &trans    &trans
+        &trans  &kp ESCAPE  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp STAR  &kp LPAR   &kp RPAR  &trans
+        &trans  &trans      &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH  &trans
+        &trans  &trans      &trans  &trans    &trans    &trans       &trans     &trans     &trans    &kp GRAVE  &kp APOS  &trans
                                     &trans    &trans    &trans       &trans     &trans     &trans
       >;
     };
 
     lower {
       bindings = <
-        &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6          &kp N7          &kp N8        &kp N9           &kp N0   &trans
-        &trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp INS  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans    &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &trans   &trans
+        &trans  &trans  &trans  &trans  &trans  &trans    &kp HOME        &kp PG_DN       &kp PG_UP     &kp END          &trans    &trans
+        &trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans    &trans
+        &trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans          &trans        &kp GRAVE        &kp APOS  &trans
                                 &trans  &trans  &trans    &trans          &trans          &trans
       >;
     };
