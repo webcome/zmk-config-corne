@@ -1,6 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
 
 // dt-formatter: indent = "  "
@@ -257,7 +258,7 @@
     special {
       bindings = <
         &trans  &kp ESCAPE  &kp LG(W)    &kp LG(E)  &kp LG(R)  &kp LG(T)    &trans         &trans        &trans         &kp LG(O)    &kp LG(P)     &trans
-        &trans  &kp LG(A)   &kp LG(TAB)  &kp LCMD   &kp LG(F)  &kp LG(G)    &kp LG(MINUS)  &kp LG(PLUS)  &kp LG(K)      &kp LG(L)    &trans        &trans
+        &trans  &kp LG(A)   &kt LG(TAB)  &kp LCMD   &kp LG(F)  &kp LG(G)    &kp LG(MINUS)  &kp LG(PLUS)  &kp LG(K)      &kp LG(L)    &trans        &trans
         &trans  &kp LG(Z)   &kp LG(X)    &kp LG(C)  &kp LG(V)  &kp LG(B)    &trans         &trans        &kp LG(GRAVE)  &kp LG(DOT)  &kp LG(APOS)  &trans
                                          &trans     &trans     &trans       &trans         &trans        &trans
       >;
