@@ -251,10 +251,10 @@
 
     special {
       bindings = <
-        &trans  &kp ESCAPE  &kp LG(W)    &trans     &trans     &trans    &trans  &trans  &trans  &trans         &trans        &trans
-        &trans  &kp LG(A)   &kp LG(TAB)  &trans     &trans     &trans    &trans  &trans  &trans  &trans         &trans        &trans
-        &trans  &kp LG(Z)   &kp LG(X)    &kp LG(C)  &kp LG(V)  &trans    &trans  &trans  &trans  &kp LG(GRAVE)  &kp LG(APOS)  &trans
-                                         &trans     &trans     &trans    &trans  &trans  &trans
+        &trans  &kp ESCAPE  &kp LG(W)    &trans     &kp LG(R)  &kp LG(T)    &trans         &trans        &trans         &trans       &trans        &trans
+        &trans  &kp LG(A)   &kp LG(TAB)  &trans     &kp LG(F)  &kp LG(G)    &kp LG(MINUS)  &kp LG(PLUS)  &trans         &trans       &trans        &trans
+        &trans  &kp LG(Z)   &kp LG(X)    &kp LG(C)  &kp LG(V)  &trans       &trans         &trans        &kp LG(GRAVE)  &kp LG(DOT)  &kp LG(APOS)  &trans
+                                         &trans     &trans     &trans       &trans         &trans        &trans
       >;
     };
   };
