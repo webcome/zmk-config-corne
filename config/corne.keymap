@@ -191,16 +191,16 @@
         &trans  &kp Q              &kp W                &kp E            &kp R  &kp T           &kp Y           &kp U           &kp I                 &kp O                   &kp P                       &trans
         &trans  &hml LEFT_SHIFT A  &hmr2 4 S            &kp D            &kp F  &kp G           &kp H           &kp J           &kp K                 &hmr2 6 L               &hmr RIGHT_SHIFT SEMICOLON  &trans
         &trans  &kp Z              &hml LEFT_CONTROL X  &hml LEFT_ALT C  &kp V  &kp B           &kp N           &kp M           &hmr RIGHT_ALT COMMA  &hmr RIGHT_CONTROL DOT  &kp FSLH                    &trans
-                                                        &kp LGUI         &sl 1  &kp LEFT_ALT    &hmr2 2 RETURN  &hmr2 2 RETURN  &kp SPACE
+                                                        &sl 7            &sl 1  &kp LEFT_ALT    &hmr2 2 RETURN  &hmr2 2 RETURN  &kp SPACE
       >;
     };
 
     raise {
       bindings = <
-        &trans  &kp ESCAPE  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp STAR  &kp LPAR   &kp RPAR  &trans
-        &trans  &trans      &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH  &trans
-        &trans  &trans      &trans  &trans    &trans    &trans       &trans     &trans     &trans    &kp GRAVE  &kp APOS  &trans
-                                    &trans    &trans    &trans       &trans     &trans     &trans
+        &trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp STAR  &kp LPAR   &kp RPAR  &trans
+        &trans  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH  &trans
+        &trans  &trans    &trans  &trans    &trans    &trans       &trans     &trans     &trans    &kp GRAVE  &kp APOS  &trans
+                                  &trans    &trans    &trans       &trans     &trans     &trans
       >;
     };
 
@@ -246,6 +246,15 @@
         &trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11    &trans                                  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans  &trans  &trans
         &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F12    &trans                                  &trans                &trans                &trans  &trans  &trans
                                 &trans  &trans  &trans     &trans                                  &trans                &trans
+      >;
+    };
+
+    special {
+      bindings = <
+        &trans  &kp ESCAPE  &trans       &trans     &trans     &trans    &trans  &trans  &trans  &trans         &trans        &trans
+        &trans  &kp LG(A)   &kp LG(TAB)  &trans     &trans     &trans    &trans  &trans  &trans  &trans         &trans        &trans
+        &trans  &kp LG(Z)   &kp LG(X)    &kp LG(C)  &kp LG(V)  &trans    &trans  &trans  &trans  &kp LG(GRAVE)  &kp LG(APOS)  &trans
+                                         &trans     &trans     &trans    &trans  &trans  &trans
       >;
     };
   };
