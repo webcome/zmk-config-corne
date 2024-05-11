@@ -152,15 +152,15 @@
       flavor = "tap-preferred";
     };
 
-    hml2: hml2 {
+    hml2holdpref: hml2holdpref {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
-      label = "HML2";
+      label = "HML2HOLDPREF";
       bindings = <&sl>, <&kp>;
 
       tapping-term-ms = <200>;
       hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
-      flavor = "tap-preferred";
+      flavor = "hold-preferred";
     };
   };
 
@@ -178,10 +178,10 @@
 
     base {
       bindings = <
-        &trans  &kp Q              &kp W                &kp E            &kp R                &kp T           &kp Y           &kp U                 &kp I             &kp O                 &kp P                       &trans
-        &trans  &hml LEFT_SHIFT A  &hml LEFT_CONTROL S  &hml LEFT_ALT D  &hml LEFT_COMMAND F  &kp G           &kp H           &hml RIGHT_COMMAND J  &hmr RIGHT_ALT K  &hmr RIGHT_CONTROL L  &hmr RIGHT_SHIFT SEMICOLON  &trans
-        &trans  &kp Z              &hmr2 4 X            &kp C            &kp V                &kp B           &kp N           &kp M                 &kp COMMA         &hmr2 6 DOT           &kp FSLH                    &trans
-                                                        &sl 7            &sl 1                &kp LEFT_ALT    &hmr2 2 RETURN  &hmr2 2 RETURN        &kp SPACE
+        &trans  &kp Q              &kp W                &kp E            &kp R                &kp T     &kp Y   &kp U                   &kp I             &kp O                 &kp P                       &trans
+        &trans  &hml LEFT_SHIFT A  &hml LEFT_CONTROL S  &hml LEFT_ALT D  &hml LEFT_COMMAND F  &kp G     &kp H   &hml RIGHT_COMMAND J    &hmr RIGHT_ALT K  &hmr RIGHT_CONTROL L  &hmr RIGHT_SHIFT SEMICOLON  &trans
+        &trans  &kp Z              &hmr2 4 X            &kp C            &kp V                &kp B     &kp N   &kp M                   &kp COMMA         &hmr2 6 DOT           &kp FSLH                    &trans
+                                                        &sl 7            &sl 1                &trans    &trans  &hml2holdpref 2 RETURN  &kp SPACE
       >;
     };
 
