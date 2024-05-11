@@ -15,28 +15,8 @@
     compatible = "zmk,combos";
 
     tab {
-      key-positions = <14 13>;
+      key-positions = <14 15>;
       bindings = <&kp TAB>;
-    };
-
-    ctrl {
-      key-positions = <26 27>;
-      bindings = <&kp LCTRL>;
-    };
-
-    cmd {
-      key-positions = <37 38>;
-      bindings = <&kp LCMD>;
-    };
-
-    alt {
-      key-positions = <39 40>;
-      bindings = <&kp LEFT_ALT>;
-    };
-
-    shift {
-      key-positions = <8 9>;
-      bindings = <&kp LSHIFT>;
     };
 
     caps_word {
