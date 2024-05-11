@@ -187,19 +187,19 @@
 
     raise {
       bindings = <
-        &trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp STAR  &kp LPAR   &kp RPAR  &trans
-        &trans  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH  &trans
-        &trans  &trans    &trans  &trans    &trans    &trans       &trans     &trans     &trans    &kp GRAVE  &kp APOS  &trans
-                                  &trans    &trans    &trans       &trans     &trans     &trans
+        &trans  &kp ESCAPE  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp STAR  &kp LPAR   &kp RPAR  &trans
+        &trans  &kp EXCL    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH  &trans
+        &trans  &trans      &trans  &trans    &trans    &trans       &trans     &trans     &trans    &kp GRAVE  &kp APOS  &trans
+                                    &trans    &trans    &trans       &trans     &trans     &trans
       >;
     };
 
     lower {
       bindings = <
-        &trans  &trans  &trans  &trans  &trans  &trans    &kp HOME        &kp PG_DN       &kp PG_UP     &kp END          &trans    &trans
-        &trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans    &trans
-        &trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans          &trans        &kp GRAVE        &kp APOS  &trans
-                                &trans  &trans  &trans    &trans          &trans          &trans
+        &trans  &kp ESCAPE  &trans  &trans  &trans  &trans    &kp HOME        &kp PG_DN       &kp PG_UP     &kp END          &trans    &trans
+        &trans  &trans      &trans  &trans  &trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans    &trans
+        &trans  &trans      &trans  &trans  &trans  &trans    &trans          &trans          &trans        &kp GRAVE        &kp APOS  &trans
+                                    &trans  &trans  &trans    &trans          &trans          &trans
       >;
     };
 
