@@ -85,13 +85,6 @@
       bindings = <&kp ESCAPE &kp SPACE &kp SPACE &kp S>;
       label = "LEADER_LEADER";
     };
-
-    cmd_tab: cmd_tab {
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      label = "CMD_TAB";
-      bindings = <&macro_press>, <&kp LEFT_COMMAND>, <&macro_tap>, <&kp TAB>;
-    };
   };
 
   behaviors {
@@ -247,10 +240,10 @@
 
     special {
       bindings = <
-        &trans  &kp ESCAPE  &kp LG(W)  &kp LG(E)  &kp LG(R)  &kp LG(T)    &trans         &trans        &trans         &kp LG(O)    &kp LG(P)     &trans
-        &trans  &kp LG(A)   &cmd_tab   &trans     &kp LG(F)  &kp LG(G)    &kp LG(MINUS)  &kp LG(PLUS)  &kp LG(K)      &kp LG(L)    &trans        &trans
-        &trans  &kp LG(Z)   &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(B)    &trans         &trans        &kp LG(GRAVE)  &kp LG(DOT)  &kp LG(APOS)  &trans
-                                       &trans     &trans     &trans       &trans         &trans        &trans
+        &trans  &kp ESCAPE  &kp LG(W)    &kp LG(E)  &kp LG(R)  &kp LG(T)    &trans         &trans        &trans         &kp LG(O)    &kp LG(P)     &trans
+        &trans  &kp LG(A)   &kp LG(TAB)  &trans     &kp LG(F)  &kp LG(G)    &kp LG(MINUS)  &kp LG(PLUS)  &kp LG(K)      &kp LG(L)    &trans        &trans
+        &trans  &kp LG(Z)   &kp LG(X)    &kp LG(C)  &kp LG(V)  &kp LG(B)    &trans         &trans        &kp LG(GRAVE)  &kp LG(DOT)  &kp LG(APOS)  &trans
+                                         &trans     &trans     &trans       &trans         &trans        &trans
       >;
     };
   };
