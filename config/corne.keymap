@@ -188,8 +188,8 @@
     raise {
       bindings = <
         &trans  &kp ESCAPE  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp STAR  &kp LPAR   &kp RPAR  &trans
-        &trans  &kp EXCL    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH  &trans
-        &trans  &trans      &trans  &trans    &trans    &trans       &trans     &trans     &trans    &kp GRAVE  &kp APOS  &trans
+        &trans  &trans      &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH  &trans
+        &trans  &kp EXCL    &trans  &trans    &trans    &trans       &trans     &trans     &trans    &kp GRAVE  &kp APOS  &trans
                                     &trans    &trans    &trans       &trans     &trans     &trans
       >;
     };
