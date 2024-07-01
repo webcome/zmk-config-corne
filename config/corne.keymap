@@ -240,9 +240,9 @@
 
     special {
       bindings = <
-        &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans            &trans                    &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LS(LG(LBKT))  &kp LS(LG(LEFT_BRACKET))  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans            &trans                    &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans            &trans            &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LS(LG(LBKT))  &kp LS(LG(RBKT))  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans            &trans            &trans  &trans
                                 &trans  &trans  &trans    &trans  &trans  &trans
       >;
     };
